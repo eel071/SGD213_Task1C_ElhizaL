@@ -4,11 +4,11 @@ using System.Collections;
 public class Rotate : MonoBehaviour
 {
     [SerializeField]
-    private float maximumSpinSpeed = 200;
+    private float maxSpinSpeed = 200;
 
     // Use this for initialization
     void Start()
     {
-        GetComponent<Rigidbody2D>().angularVelocity = Random.Range(-maximumSpinSpeed, maximumSpinSpeed);
+        GetComponent<Rigidbody2D>().angularVelocity = Random.Range(-maxSpinSpeed, maxSpinSpeed);
     }
 }
