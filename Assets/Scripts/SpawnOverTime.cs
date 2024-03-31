@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SpawnOverTimeScript : MonoBehaviour
+public class SpawnOverTime : MonoBehaviour
 {
 
     // Object to spawn

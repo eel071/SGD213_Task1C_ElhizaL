@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovementScript : MonoBehaviour 
+public class PlayerMovement : MonoBehaviour 
 {
             // SerializeField exposes this value to the Editor, but not to other Scripts!
             // It is "pseudo public"
