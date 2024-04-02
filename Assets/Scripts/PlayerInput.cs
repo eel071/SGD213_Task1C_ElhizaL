@@ -6,11 +6,13 @@ public class PlayerInput : MonoBehaviour
 {
 
     private PlayerMovement playerMovement;
+    private Shooting shooting;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerMovement = GetComponent<PlayerMovement>();    
+        playerMovement = GetComponent<PlayerMovement>();  
+        shooting = GetComponent<Shooting>();
     }
 
     // Update is called once per frame
@@ -21,6 +23,11 @@ public class PlayerInput : MonoBehaviour
         if (HorizontalInput != 0.0f ) 
         {
             playerMovement.HorizontalMovement(HorizontalInput);
+        }
+
+        if (Input.GetButton("Fire1"))
+        {
+            shooting.Shoot();
         }
     }
 }

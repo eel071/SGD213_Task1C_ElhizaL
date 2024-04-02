@@ -19,18 +19,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); 
     }
 
-    // Update is called once per frame
-    /*void Update() 
-    {
-        float HorizontalInput = Input.GetAxis("Horizontal");
-
-        if (HorizontalInput != 0.0f) 
-        {
-            Vector2 ForceToAdd=Vector2.right*HorizontalInput*speed*Time.deltaTime;
-            rb.AddForce(ForceToAdd);
-        } 
-    } 
-    */
 
     public void HorizontalMovement(float HorizontalInput)
     {
