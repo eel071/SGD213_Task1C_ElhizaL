@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update() 
+    /*void Update() 
     {
         float HorizontalInput = Input.GetAxis("Horizontal");
 
@@ -30,4 +30,11 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(ForceToAdd);
         } 
     } 
+    */
+
+    public void HorizontalMovement(float HorizontalInput)
+    {
+        Vector2 ForceToAdd = Vector2.right * HorizontalInput * speed * Time.deltaTime;
+        rb.AddForce(ForceToAdd);
+    }
 }
