@@ -83,6 +83,6 @@ public class PlayerInput : MonoBehaviour
         // remove the old weapon
         Destroy(weapon);
         // set our current weapon to be the newWeapon
-        weapon = newWeapon;
-    }
+        weapon = newWeapon; 
+    } 
 }
