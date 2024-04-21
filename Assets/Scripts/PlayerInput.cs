@@ -64,6 +64,7 @@ public class PlayerInput : MonoBehaviour
     /// will popluate the newWeapon's controls and remove the existing weapon ready for usage.
     /// </summary>
     /// <param name="weaponType">The given weaponType to swap our current weapon to, this is an enum in WeaponBase.cs</param>
+    
     public void SwapWeapon(WeaponType weaponType)
     {
         // make a new weapon dependent on the weaponType

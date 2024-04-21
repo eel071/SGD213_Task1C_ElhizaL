@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponMachineGun : WeaponBase 
-{
-    
+{    
     /// <summary>
     /// Shoot will spawn a new bullet, provided enough time has passed compared to our fireDelay.
     /// </summary>
+    
     public override void Shoot() 
     {
         // get the current time
