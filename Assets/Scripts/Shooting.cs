@@ -12,7 +12,7 @@ public class Shooting : MonoBehaviour
     [SerializeField]
     private float fireDelay = 1f;
 
-    private float bulletOffset = 2f;
+    private float bulletOffset = 1f;
 
     void Start()
     {

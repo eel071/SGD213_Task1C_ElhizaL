@@ -7,10 +7,10 @@ public class SpawnOverTime : MonoBehaviour
     // Object to spawn
     [SerializeField]
     private GameObject spawnObject;
-
+    
     // Delay between spawns
     [SerializeField]
-    private float spawnDelay = 2f;
+    private float spawnDelay;
 
     private Renderer ourRenderer;
 

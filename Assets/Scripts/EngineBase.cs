@@ -9,12 +9,12 @@ public class EngineBase : MonoBehaviour
     private float acceleration = 5000f;
 
     // local references
-    private Rigidbody2D ourRigidbody;
+    private Rigidbody2D rb;
 
     void Start()
     {
         // populate ourRigidbody
-        ourRigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     /// <summary>
@@ -27,6 +27,6 @@ public class EngineBase : MonoBehaviour
         //calculate our force to add
         Vector2 forceToAdd = direction * acceleration * Time.deltaTime;
         // apply forceToAdd to ourRigidbody
-        ourRigidbody.AddForce(forceToAdd);
+        rb.AddForce(forceToAdd);
     }
 }

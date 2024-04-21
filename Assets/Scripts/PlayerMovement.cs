@@ -8,15 +8,15 @@ public class PlayerMovement : MonoBehaviour
 {
     // horizontalPlayerSpeed indicates how fast we accelerate Horizontally
     [SerializeField]
-    private float horizontalPlayerAcceleration = 5000f;
+    private float speed = 5000f;
 
     // local references
-    private Rigidbody2D ourRigidbody;
+    private Rigidbody2D rb;
 
     void Start()
     {
         // populate ourRigidbody
-        ourRigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     /// <summary>
@@ -32,9 +32,9 @@ public class PlayerMovement : MonoBehaviour
         if (horizontalInput != 0) 
         {
             //calculate our force to add
-            Vector2 forceToAdd = Vector2.right * horizontalInput * horizontalPlayerAcceleration * Time.deltaTime;
+            Vector2 forceToAdd = Vector2.right * horizontalInput * speed * Time.deltaTime;
             // apply forceToAdd to ourRigidbody
-            ourRigidbody.AddForce(forceToAdd);
+            rb.AddForce(forceToAdd);
         }
     }
 
@@ -44,9 +44,9 @@ public class PlayerMovement : MonoBehaviour
         if (direction.magnitude != 0)
         {
             //calculate our force to add
-            Vector2 forceToAdd = direction * horizontalPlayerAcceleration * Time.deltaTime;
+            Vector2 forceToAdd = direction * speed * Time.deltaTime;
             // apply forceToAdd to ourRigidbody
-            ourRigidbody.AddForce(forceToAdd);
+            rb.AddForce(forceToAdd);
         }
     }
 }
